@@ -42,7 +42,7 @@ ul {
 
 a {
   text-decoration: none;
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 img {
@@ -78,11 +78,79 @@ textarea:focus {
   outline: none !important;
 }
 
+body {
+  font-family: "Thasadith";
+}
+
+.link-button {
+  display: block;
+  font-size: 26px;
+  background-color: #00000024;
+  padding: 2px, 37px, 2px, 37px;
+  border-radius: 50px;
+  width: 265px;
+  text-align: center;
+  color: #000000;
+  cursor: pointer;
+  font-family: "Thasadith-Bold";
+  -webkit-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.link-button:hover {
+  background-color: #00FF94;
+  color: #ffffff;
+}
+
+.green {
+  color: #000000;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.green:hover {
+  color: #00FF94;
+}
+
+.subtitle {
+  font-size: 55px;
+}
+
+@font-face {
+  font-family: 'Thasadith';
+  src: url("../fonts/Thasadith-Regular.eot");
+  src: url("../fonts/Thasadith-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Thasadith-Regular.woff2") format("woff2"), url("../fonts/Thasadith-Regular.woff") format("woff"), url("../fonts/Thasadith-Regular.ttf") format("truetype"), url("../fonts/Thasadith-Regular.svg#Thasadith-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Thasadith-Bold';
+  src: url("../fonts/Thasadith-Bold.eot");
+  src: url("../fonts/Thasadith-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Thasadith-Bold.woff2") format("woff2"), url("../fonts/Thasadith-Bold.woff") format("woff"), url("../fonts/Thasadith-Bold.ttf") format("truetype"), url("../fonts/Thasadith-Bold.svg#Thasadith-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Scope One';
+  src: url("../fonts/ScopeOne-Regular.eot");
+  src: url("../fonts/ScopeOne-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ScopeOne-Regular.woff2") format("woff2"), url("../fonts/ScopeOne-Regular.woff") format("woff"), url("../fonts/ScopeOne-Regular.ttf") format("truetype"), url("../fonts/ScopeOne-Regular.svg#ScopeOne-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 .banner {
   overflow: hidden;
-  z-index: -100;
   position: relative;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   padding-top: 45%;
 }
@@ -92,11 +160,14 @@ textarea:focus {
   top: 0;
   left: 0;
   width: 100%;
+  -webkit-transform: scale(-1, 1);
+      -ms-transform: scale(-1, 1);
+          transform: scale(-1, 1);
 }
 
 .banner__content {
   position: absolute;
-  top: 20%;
+  top: 25%;
   left: 5%;
   width: 100%;
   height: 100%;
@@ -112,7 +183,7 @@ textarea:focus {
 }
 
 .banner__title {
-  font-size: 80px;
+  font-size: 70px;
   margin-bottom: 25px;
   color: #ffffff;
 }
@@ -121,13 +192,24 @@ textarea:focus {
   font-size: 20px;
   margin-bottom: 40px;
   color: #ffffff;
+  font-family: "Scope-One";
 }
 
 .banner__button {
   margin-left: 25px;
+  display: block;
+  font-size: 26px;
+  background-color: #ffffff1e;
+  padding: 2px, 37px, 2px, 37px;
+  border-radius: 50px;
+  width: 265px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 .header {
+  z-index: 5;
   position: absolute;
   top: 15px;
   left: 0;
@@ -139,6 +221,9 @@ textarea:focus {
           justify-content: space-between;
   padding: 5px 30px 5px;
   width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo__link {
@@ -146,8 +231,8 @@ textarea:focus {
 }
 
 .logo__image {
-  width: 100px;
-  height: 70px;
+  width: 90px;
+  height: 60px;
   -o-object-fit: contain;
   object-fit: contain;
 }
@@ -160,49 +245,22 @@ textarea:focus {
 
 .nav__item {
   margin-right: 30px;
+  cursor: pointer;
 }
 
 .nav__link {
   color: #ffffff;
-  font-size: 26px;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 .login {
   border-bottom: 2px solid #ffffff;
 }
 
-.link-button {
-  display: block;
-  font-size: 26px;
-  background-color: #FFFFFF3B;
-  padding: 2px, 37px, 2px, 37px;
-  border-radius: 50px;
-  width: 265px;
-  text-align: center;
-  color: #ffffff;
-  cursor: pointer;
-}
-
-.subtitle {
-  font-size: 55px;
-}
-
-.our-courses__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 40px;
-}
-
-.our-courses__item {
-  width: 30%;
-  height: auto;
-}
-
-.our-courses__wrapper {
+.our-courses {
+  width: 95%;
+  margin: 0 auto 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -212,11 +270,298 @@ textarea:focus {
           flex-direction: column;
 }
 
+.our-courses__title {
+  margin: 20px 0 40px;
+}
+
+.our-courses__list {
+  width: 95%;
+  margin: 0 auto 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.our-courses__item {
+  width: 28%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.our-courses__item:hover .our-courses__wrapper {
+  bottom: 0;
+}
+
+.our-courses__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.our-courses__wrapper {
+  padding: 10px 7px 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  background-color: #ffffff;
+  bottom: -100%;
+  left: 0;
+  -webkit-transition: all 0.8s ease-out;
+  -o-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out;
+}
+
 .our-courses__subtitle {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  font-family: "Thasadith-Bold";
+  font-size: 24px;
+}
+
+.our-courses__button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 2.5%;
+}
+
+.our-courses__price {
+  font-family: "Thasadith-Bold";
+  font-size: 24px;
+}
+
+.our-courses__description {
+  font-size: 18px;
+}
+
+.course1 {
+  background-image: url(/images/course_img1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.course2 {
+  background-image: url(/images/course_img2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.course3 {
+  background-image: url(/images/course_img1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .wrap_space-between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.advantages {
+  background-color: rgba(87, 86, 86, 0.151);
+  width: 100%;
+  height: 95vh;
+}
+
+.advantages .site-width {
+  width: 95%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.advantages__title {
+  color: #00FF94;
+}
+
+.advantages__list {
+  height: 90%;
+  width: 95%;
+  margin: 0 auto;
+  padding: 20px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.advantages__item {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.advantages__item-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 30%;
+}
+
+.advantages__num {
+  font-size: 70px;
+  color: #ffffff;
+  font-family: "Thasadith-Bold";
+  margin-right: 20px;
+}
+
+.advantages__wrap {
+  font-size: 18px;
+}
+
+.advantages__wrap span {
+  color: #000000;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.advantages__wrap span:hover {
+  color: #00FF94;
+}
+
+.advantages__subtitle {
+  font-family: "Thasadith-Bold";
+}
+
+.payment {
+  width: 95%;
+  height: 90vh;
+  margin: 0 auto;
+}
+
+.payment__title {
+  color: #00FF94;
+  padding: 50px 0 50px;
+}
+
+.payment__list {
+  width: 87%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.payment .word {
+  color: #ffffff00;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  bottom: 90px;
+  left: 100px;
+  position: absolute;
+  font-size: 40px;
+}
+
+.payment .wordpay {
+  color: #ffffff00;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  bottom: 90px;
+  left: 110px;
+  position: absolute;
+  font-size: 40px;
+}
+
+.payment .letter {
+  position: absolute;
+  bottom: 65px;
+  left: 82px;
+  color: grey;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  font-size: 85px;
+}
+
+.payment .letterpay {
+  position: absolute;
+  bottom: 65px;
+  left: 90px;
+  color: grey;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  font-size: 85px;
+}
+
+.payment__link {
+  position: relative;
+  display: block;
+  position: relative;
+  width: 230px;
+  height: 230px;
+  border: 2px solid #898989;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.payment__link:hover {
+  border: 2px solid #00FF94;
+}
+
+.payment__link:hover .word {
+  color: #00FF94;
+  bottom: 90px;
+  left: 60px;
+}
+
+.payment__link:hover .wordpay {
+  color: #00FF94;
+  bottom: 90px;
+  left: 65px;
+}
+
+.payment__link:hover .letter {
+  color: #00FF94;
+  font-size: 40px;
+  left: 35px;
+  bottom: 90px;
+}
+
+.payment__link:hover .letterpay {
+  color: #00FF94;
+  font-size: 40px;
+  left: 45px;
+  bottom: 90px;
+}
+
+.payment__button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.footer__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
