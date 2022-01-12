@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Scope One';
+    src: url('ScopeOne-Regular.eot');
+    src: url('ScopeOne-Regular.eot?#iefix') format('embedded-opentype'),
+        url('ScopeOne-Regular.woff2') format('woff2'),
+        url('ScopeOne-Regular.woff') format('woff'),
+        url('ScopeOne-Regular.ttf') format('truetype'),
+        url('ScopeOne-Regular.svg#ScopeOne-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
