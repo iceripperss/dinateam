@@ -142,7 +142,7 @@ body {
   font-family: 'Scope One';
   src: url("../fonts/ScopeOne-Regular.eot");
   src: url("../fonts/ScopeOne-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ScopeOne-Regular.woff2") format("woff2"), url("../fonts/ScopeOne-Regular.woff") format("woff"), url("../fonts/ScopeOne-Regular.ttf") format("truetype"), url("../fonts/ScopeOne-Regular.svg#ScopeOne-Regular") format("svg");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -270,18 +270,18 @@ body {
   border: none;
   cursor: pointer;
   padding: 10px 20px 17px;
-  width: 150px;
-  height: 50px;
+  width: 170px;
+  height: 75px;
   -webkit-transition: all 0.7s ease-out;
   -o-transition: all 0.7s ease-out;
   transition: all 0.7s ease-out;
-  font-family: "Scope-One";
+  font-family: 'Scope One';
   font-size: 18px;
 }
 
 .btn:hover {
-  width: 350px;
-  height: 100px;
+  width: 360px;
+  height: 75px;
 }
 
 .btn:hover .button__content {
@@ -289,7 +289,7 @@ body {
 }
 
 .btn:hover .button__content-show {
-  font-size: 16px;
+  font-size: 15px;
   -webkit-transition: all 0.3s ease-out 0.2s;
   -o-transition: all 0.3s ease-out 0.2s;
   transition: all 0.3s ease-out 0.2s;
@@ -305,13 +305,10 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 15px 20px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-
-/*--- btn-3 ---*/
 
 .btn-3 {
   padding: 5px;
@@ -393,7 +390,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 90vh;
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -409,15 +406,19 @@ body {
 
 .specialist__item2 {
   position: absolute;
-  top: 30%;
-  left: 40%;
   -webkit-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+  top: 30%;
+  left: 50%;
+  margin-left: -90px;
+  -webkit-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
 }
 
 .specialist__item2:hover {
-  left: 35%;
+  margin-left: -177px;
 }
 
 .specialist__item3 {
@@ -485,7 +486,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-  background-color: #ffffff;
+  background-color: #ffffffcb;
   bottom: -100%;
   left: 0;
   -webkit-transition: all 0.8s ease-out;
