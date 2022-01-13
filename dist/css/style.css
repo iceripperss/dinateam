@@ -258,12 +258,6 @@ body {
   border-bottom: 2px solid #ffffff;
 }
 
-::before,
-::after {
-  position: absolute;
-  content: "";
-}
-
 .btn {
   position: relative;
   background-color: transparent;
@@ -394,6 +388,12 @@ body {
   margin: 0 auto;
 }
 
+.specialist ::before,
+.specialist ::after {
+  position: absolute;
+  content: "";
+}
+
 .specialist__list {
   position: relative;
 }
@@ -449,7 +449,7 @@ body {
 }
 
 .our-courses__list {
-  width: 95%;
+  width: 90%;
   margin: 0 auto 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -468,6 +468,14 @@ body {
 
 .our-courses__item:hover .our-courses__wrapper {
   bottom: 0;
+}
+
+.our-courses__images {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .our-courses__link {
@@ -513,12 +521,6 @@ body {
 
 .our-courses__description {
   font-size: 18px;
-}
-
-.course1 {
-  background-image: url(/images/course_img1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .course2 {
@@ -817,4 +819,264 @@ body {
 .footer__link {
   color: #000000;
   font-family: "Thasadith-Bold";
+}
+
+.courses {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.courses__wrap {
+  background-color: #C4C4C424;
+}
+
+.courses__title {
+  padding: 60px 0 50px;
+  font-size: 70px;
+  color: #000000;
+}
+
+.courses__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.courses__item {
+  width: 20%;
+  max-width: 330px;
+  min-width: 270px;
+  margin: 0 15px 20px;
+}
+
+.courses__img {
+  height: 45%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.courses__wrapper {
+  background-color: #ffffff;
+  padding: 10px 10px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #000000;
+}
+
+.courses__subtitle {
+  font-family: "Thasadith-Bold";
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.courses__price {
+  font-family: "Thasadith-Bold";
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.courses__description {
+  font-size: 17px;
+  font-family: "Scope One";
+  color: #000000;
+  margin-bottom: 7px;
+}
+
+.courses__button {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: block;
+  font-size: 22px;
+  background-color: #00000024;
+  padding: 3px, 15px, 4px;
+  border-radius: 50px;
+  width: 155px;
+  text-align: center;
+  color: #000000;
+  cursor: pointer;
+  font-family: "Thasadith-Bold";
+  -webkit-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.courses__button:hover {
+  background-color: #00FF94;
+  color: #ffffff;
+}
+
+.courses__button-more {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 16px;
+  font-family: "Scope One";
+  -webkit-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  color: #000000;
+  margin-bottom: 7px;
+}
+
+.courses__button-more:hover {
+  color: #00FF94;
+}
+
+.course-page__banner {
+  width: 100%;
+  height: 100vh;
+}
+
+.course-page__banner .header {
+  background-color: #00FF94;
+  position: relative;
+  top: 0;
+  left: 0;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 40vh;
+  padding: 15px 30px 5px;
+  z-index: -1;
+}
+
+.course-page__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  margin: -73px auto 0;
+}
+
+.course-page__right {
+  width: 50%;
+}
+
+.course-page__title {
+  color: #ffffff;
+  font-size: 70px;
+}
+
+.course-page__subtitle {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 0 0 40px;
+}
+
+.course-page__img {
+  width: 43%;
+  height: 300px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.course-page__desc-wrap {
+  height: 53%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.course-page__mindescription {
+  font-family: "Thasadith-Bold";
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.course-page__price-wrap {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.course-page__price {
+  color: #00FF94;
+  font-family: "Thasadith-Bold";
+  font-size: 24px;
+}
+
+.course-page__button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: block;
+  font-size: 22px;
+  background-color: #00000024;
+  padding: 3px, 15px, 4px;
+  border-radius: 50px;
+  width: 170px;
+  text-align: center;
+  color: #000000;
+  cursor: pointer;
+  font-family: "Thasadith-Bold";
+  -webkit-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.course-page__button:hover {
+  background-color: #00FF94;
+  color: #ffffff;
+}
+
+.course-page__about {
+  padding: 30px 0 50px;
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.course-page__description {
+  width: 90%;
+  font-family: "Thasadith-Bold";
+  font-size: 19px;
+}
+
+.courses-wrap {
+  width: 100%;
+  background-color: #EFEFEF;
+}
+
+.other-courses .our-courses__list {
+  padding: 30px 0 30px;
+}
+
+.other-courses__title {
+  margin: 0 auto 40px;
+  width: 90%;
+  text-align: end;
 }
