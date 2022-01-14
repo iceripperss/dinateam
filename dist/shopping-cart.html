@@ -1,0 +1,166 @@
+<!-- КОРЗИНА -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Shopping cart</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="cart">
+        <header class="header">
+            <a class="logo__link" href="index.html">
+                <img class="logo__image" src="images/logo_black.png">
+            </a>
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link" href="index.html">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="choose_course.html">Courses</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="about-us.html">About us</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="publish.html">Publish</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="shopping-cart.html">Contact us</a>
+                </li>
+                <li class="nav__item ">
+                    <a class="nav__link icon-cart" href="shopping-cart.html "></a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link login" href="login.html">Log in</a>
+                </li>
+            </ul>
+        </header>
+
+        <h1 class="cart__title subtitle">My cart</h1>
+        <!-- Заголовки -->
+        <ul class="cart-subtitle__list">
+            <li class="cart-subtitle__item">course</li>
+            <li class="cart-subtitle__item">price</li>
+            <li class="cart-subtitle__item">quantity</li>
+            <li class="cart-subtitle__item">in total</li>
+        </ul>
+        <!-- КУРС -->
+        <ul class="cart__list">
+            <li class="cart__item">
+                <a href="course-page.html" class="cart__link">course 1</a>
+            </li>
+            <li class="cart__item price">100$</li>
+            <li class="cart__item">
+                <div id="counter" class="basket__item-counter " data-price="330">
+                    <button class="btn-minus">-</button>
+                    <div class="basket__item-var">1</div>
+                    <button class="btn-plus">+</button>
+                </div>
+            </li>
+            <li class="cart__item total-price">100$</li>
+            <li class="cart__item">
+                <button class="cart__cancel icon-times"></button>
+            </li>
+        </ul>
+        <!-- КУРС -->
+        <ul class="cart__list">
+            <li class="cart__item">
+                <a href="course-page.html" class="cart__link">course 1</a>
+            </li>
+            <li class="cart__item">100$</li>
+            <li class="cart__item">
+                <div id="counter" class="basket__item-counter " data-price="330">
+                    <button class="btn-minus">-</button>
+                    <div class="basket__item-var">1</div>
+                    <button class="btn-plus">+</button>
+                </div>
+            </li>
+            <li class="cart__item total-price">100$</li>
+            <li class="cart__item">
+                <button class="cart__cancel icon-times"></button>
+            </li>
+        </ul>
+        <!-- КУРС -->
+        <ul class="cart__list">
+            <li class="cart__item">
+                <a href="course-page.html" class="cart__link">course 1</a>
+            </li>
+            <li class="cart__item price" id="calculation">100$</li>
+            <li class="cart__item">
+                <div id="counter" class="basket__item-counter " data-price="330">
+                    <button class="btn-minus">-</button>
+                    <div class="basket__item-var">1</div>
+                    <button class="btn-plus">+</button>
+                </div>
+            </li>
+            <li class="cart__item total-price price">100$</li>
+            <li class="cart__item">
+                <button class="cart__cancel icon-times"></button>
+            </li>
+        </ul>
+
+        <div class="cart__total-wrap">
+            <span class="cart__total">In total</span>
+            <span class="cart__total-price">300$</span>
+        </div>
+    </section>
+    <section class="reg-order">
+        <h2 class="reg-order__title subtitle">Registration of the order</h2>
+        <form action="/my-handling-form-page" method="post">
+            <ul>
+                <li>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="user_name">
+                </li>
+                <li>
+                    <label for="mail">E-mail</label>
+                    <input type="email" id="mail" name="user_mail">
+                </li>
+                <li>
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="user_phone">
+                </li>
+                <li>
+                    <label for="msg">Order notes</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                </li>
+                <li class="button">
+                    <button type="submit">Order</button>
+                </li>
+            </ul>
+        </form>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <ul class="footer__list">
+            <li class="footer__item">
+                Copyright©2021 Trauma-Informed Training Institute. All rights reserved
+            </li>
+            <li class="footer__item">
+                <a class="footer__link" href="">Support</a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__link" href="">Privacy & Policy</a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__link" href="tel:941-364-2221">941-364-2221</a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__link" href="mailto:gkelley@traumaiti.com">gkelley@traumaiti.com</a>
+            </li>
+            <li class="footer__item">
+                Powered by<a class="footer__link" href="liddweb.com"> liddweb.com</a>
+            </li>
+        </ul>
+    </footer>
+    <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
